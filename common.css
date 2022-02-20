@@ -1,0 +1,210 @@
+
+ body {
+    margin: 0;
+    background: linear-gradient(130deg,  #9b9898,  50%, #a5a5a5 0);
+
+}   
+
+.logo_title {
+    display: flex;
+    align-items: center;
+}
+
+.activeheader + main {
+    display: none;
+}
+
+.twitter_img {
+    position: relative;
+    top: 10px;
+}
+
+.twitter_title>b {
+    font-size: 35px;
+    color: #fff;
+}
+
+.desktop_responsive a:hover {
+    background-color: rgb(236, 236, 236);
+    transition: 0.8s;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+header.top_header {
+    background-color: rgb(49, 48, 48);
+    height: 80px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+    font-family: 'Merriweather', serif;
+}
+
+.top_header a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin: 10px;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    transition: .2s;
+    padding: 1rem;
+}
+
+.toggle_button {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .toggle_button {
+        display: initial;
+    }
+
+    .desktop_responsive {
+        display: none;
+    }
+
+    .twitter_title {
+        display: none;
+    }
+
+}
+
+header.top_header .button_burger_menu {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+
+.top_navigation .activedesktop {
+    display: block;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    header.top_header nav {
+        position: absolute;
+        background-color: rgb(73, 73, 73);
+        padding: 10px;
+        top: 80px;
+        z-index: 2;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(17, 16, 14);
+       font-family: 'Merriweather', serif;
+    }
+
+    header.top_header nav a {
+        font-size: 25px;
+        margin-left: 100px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    header.top_header nav {
+        display: none;
+    }
+
+}
+
+.footer-clean {
+    padding:25px;
+    background-color:rgb(255, 255, 255);
+    margin-top: 35px;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
